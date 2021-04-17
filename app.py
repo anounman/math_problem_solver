@@ -22,6 +22,5 @@ def solve():
         return render_template('index.html', answer=answer)
     except  Exception:
         return render_template('index.html' , answer='somting went wrong')
-``
 if __name__ == '__main__':
     app.run(debug=True)
