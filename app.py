@@ -14,7 +14,7 @@ def index():
 def solve():
     try:
         question = str(request.form['question'])
-        app_id = 'UWKK62-XGRKEARKHY'
+        app_id = "YOUR API KEY"
         client = wolframalpha.Client(app_id)
         res = client.query(question)
         answer = next(res.results).text
